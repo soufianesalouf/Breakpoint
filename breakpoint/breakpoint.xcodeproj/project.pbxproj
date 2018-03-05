@@ -15,6 +15,8 @@
 		9088570D204D847600B1373F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9088570B204D847600B1373F /* LaunchScreen.storyboard */; };
 		9088571A204D8BED00B1373F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90885719204D8BED00B1373F /* GoogleService-Info.plist */; };
 		9088571C204D930600B1373F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571B204D930600B1373F /* DataService.swift */; };
+		9088571E204DA20400B1373F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571D204DA20400B1373F /* GradientView.swift */; };
+		90885720204DB45A00B1373F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571F204DB45A00B1373F /* RoundedView.swift */; };
 		AE01A27B3B2EBFC0346D37BD /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AE1EBB46088A97FC41F322 /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		9088570E204D847600B1373F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90885719204D8BED00B1373F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9088571B204D930600B1373F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		9088571D204DA20400B1373F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9088571F204DB45A00B1373F /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		E295022F1C88C5A0FEAD4A00 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,8 @@
 		90885715204D88C100B1373F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9088571D204DA20400B1373F /* GradientView.swift */,
+				9088571F204DB45A00B1373F /* RoundedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			files = (
 				90885705204D846D00B1373F /* SecondViewController.swift in Sources */,
 				90885701204D846D00B1373F /* AppDelegate.swift in Sources */,
+				90885720204DB45A00B1373F /* RoundedView.swift in Sources */,
+				9088571E204DA20400B1373F /* GradientView.swift in Sources */,
 				90885703204D846D00B1373F /* FirstViewController.swift in Sources */,
 				9088571C204D930600B1373F /* DataService.swift in Sources */,
 			);
