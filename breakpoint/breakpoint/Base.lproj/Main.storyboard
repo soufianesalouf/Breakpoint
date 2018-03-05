@@ -198,6 +198,9 @@
                                                 <state key="normal" title="LOGIN WITH FB">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookSignInBtnWasPressed:" destination="3VR-qG-Z39" eventType="touchUpInside" id="t5E-sJ-wxy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-dl-ASs" customClass="RoundedButton" customModule="breakpoint" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="139" width="303" height="59.5"/>
@@ -206,6 +209,9 @@
                                                 <state key="normal" title="LOGIN WITH G+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSignInBtnWasPressed:" destination="3VR-qG-Z39" eventType="touchUpInside" id="CdM-SM-yQf"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-Cf-wNC">
                                                 <rect key="frame" x="0.0" y="208.5" width="303" height="59.5"/>
@@ -225,6 +231,9 @@
                                         <state key="normal" title=" BY EMAIL" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInWithEmailBtnWasPressed:" destination="3VR-qG-Z39" eventType="touchUpInside" id="zpP-HU-a2O"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -274,6 +283,9 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeBtnWasPressed:" destination="Ovb-EB-Gqc" eventType="touchUpInside" id="LrD-m8-aTX"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8S-oM-QyY">
                                         <rect key="frame" x="130.5" y="34.5" width="115" height="25"/>
@@ -351,6 +363,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInBtnWasPressed:" destination="Ovb-EB-Gqc" eventType="touchUpInside" id="GNW-Vf-rzJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -365,6 +380,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IUX-jT-mV7"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="uHP-DB-s3D" id="gZY-z5-NUU"/>
+                        <outlet property="passwordField" destination="lGD-To-caW" id="z7d-mB-KJb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcl-Yp-oG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
