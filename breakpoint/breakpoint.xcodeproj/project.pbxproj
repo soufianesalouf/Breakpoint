@@ -22,6 +22,7 @@
 		90885726204DBD2500B1373F /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885725204DBD2500B1373F /* InsetTextField.swift */; };
 		90885729204DC20000B1373F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885728204DC20000B1373F /* Constant.swift */; };
 		908B776B204DD27800937FB0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B776A204DD27800937FB0 /* RoundedButton.swift */; };
+		908B776D204DDD4400937FB0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B776C204DDD4400937FB0 /* AuthService.swift */; };
 		AE01A27B3B2EBFC0346D37BD /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AE1EBB46088A97FC41F322 /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		90885725204DBD2500B1373F /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		90885728204DC20000B1373F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		908B776A204DD27800937FB0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		908B776C204DDD4400937FB0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E295022F1C88C5A0FEAD4A00 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				9088571B204D930600B1373F /* DataService.swift */,
+				908B776C204DDD4400937FB0 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				90885705204D846D00B1373F /* SecondViewController.swift in Sources */,
 				90885701204D846D00B1373F /* AppDelegate.swift in Sources */,
 				90885724204DBC7B00B1373F /* LoginVC.swift in Sources */,
+				908B776D204DDD4400937FB0 /* AuthService.swift in Sources */,
 				90885720204DB45A00B1373F /* RoundedShadowView.swift in Sources */,
 				9088571E204DA20400B1373F /* GradientView.swift in Sources */,
 				90885722204DBC1800B1373F /* AuthVC.swift in Sources */,
