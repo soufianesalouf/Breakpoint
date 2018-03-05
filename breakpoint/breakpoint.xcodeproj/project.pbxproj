@@ -16,7 +16,12 @@
 		9088571A204D8BED00B1373F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90885719204D8BED00B1373F /* GoogleService-Info.plist */; };
 		9088571C204D930600B1373F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571B204D930600B1373F /* DataService.swift */; };
 		9088571E204DA20400B1373F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571D204DA20400B1373F /* GradientView.swift */; };
-		90885720204DB45A00B1373F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571F204DB45A00B1373F /* RoundedView.swift */; };
+		90885720204DB45A00B1373F /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9088571F204DB45A00B1373F /* RoundedShadowView.swift */; };
+		90885722204DBC1800B1373F /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885721204DBC1800B1373F /* AuthVC.swift */; };
+		90885724204DBC7B00B1373F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885723204DBC7B00B1373F /* LoginVC.swift */; };
+		90885726204DBD2500B1373F /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885725204DBD2500B1373F /* InsetTextField.swift */; };
+		90885729204DC20000B1373F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885728204DC20000B1373F /* Constant.swift */; };
+		908B776B204DD27800937FB0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B776A204DD27800937FB0 /* RoundedButton.swift */; };
 		AE01A27B3B2EBFC0346D37BD /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AE1EBB46088A97FC41F322 /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +39,12 @@
 		90885719204D8BED00B1373F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9088571B204D930600B1373F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		9088571D204DA20400B1373F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		9088571F204DB45A00B1373F /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		9088571F204DB45A00B1373F /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		90885721204DBC1800B1373F /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		90885723204DBC7B00B1373F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		90885725204DBD2500B1373F /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		90885728204DC20000B1373F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		908B776A204DD27800937FB0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E295022F1C88C5A0FEAD4A00 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +89,7 @@
 		908856FF204D846D00B1373F /* breakpoint */ = {
 			isa = PBXGroup;
 			children = (
+				90885727204DC1E200B1373F /* Utilities */,
 				90885718204D890A00B1373F /* Services */,
 				90885717204D88D700B1373F /* Extensions */,
 				90885716204D88CC00B1373F /* Model */,
@@ -99,6 +110,8 @@
 			children = (
 				90885704204D846D00B1373F /* SecondViewController.swift */,
 				90885702204D846D00B1373F /* FirstViewController.swift */,
+				90885721204DBC1800B1373F /* AuthVC.swift */,
+				90885723204DBC7B00B1373F /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				9088571D204DA20400B1373F /* GradientView.swift */,
-				9088571F204DB45A00B1373F /* RoundedView.swift */,
+				9088571F204DB45A00B1373F /* RoundedShadowView.swift */,
+				90885725204DBD2500B1373F /* InsetTextField.swift */,
+				908B776A204DD27800937FB0 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +147,14 @@
 				9088571B204D930600B1373F /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		90885727204DC1E200B1373F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				90885728204DC20000B1373F /* Constant.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		946B57672BE48E7374DEF0C8 /* Pods */ = {
@@ -280,10 +303,15 @@
 			files = (
 				90885705204D846D00B1373F /* SecondViewController.swift in Sources */,
 				90885701204D846D00B1373F /* AppDelegate.swift in Sources */,
-				90885720204DB45A00B1373F /* RoundedView.swift in Sources */,
+				90885724204DBC7B00B1373F /* LoginVC.swift in Sources */,
+				90885720204DB45A00B1373F /* RoundedShadowView.swift in Sources */,
 				9088571E204DA20400B1373F /* GradientView.swift in Sources */,
+				90885722204DBC1800B1373F /* AuthVC.swift in Sources */,
+				908B776B204DD27800937FB0 /* RoundedButton.swift in Sources */,
 				90885703204D846D00B1373F /* FirstViewController.swift in Sources */,
+				90885729204DC20000B1373F /* Constant.swift in Sources */,
 				9088571C204D930600B1373F /* DataService.swift in Sources */,
+				90885726204DBD2500B1373F /* InsetTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

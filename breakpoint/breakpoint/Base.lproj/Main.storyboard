@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3VR-qG-Z39">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--AuthVC-->
         <scene sceneID="opz-8c-jNd">
             <objects>
-                <viewController id="3VR-qG-Z39" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="3VR-qG-Z39" customClass="AuthVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbW-Fz-dXS" customClass="GradientView" customModule="breakpoint" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYT-u2-9mU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYT-u2-9mU" customClass="RoundedShadowView" customModule="breakpoint" customModuleProvider="target">
                                 <rect key="frame" x="16" y="154" width="343" height="358"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BMw-Sf-wpJ">
@@ -121,7 +121,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wV-kg-wld">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wV-kg-wld" customClass="RoundedButton" customModule="breakpoint" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="69.5" width="303" height="59.5"/>
                                                 <color key="backgroundColor" red="0.2627450980392157" green="0.35686274509803922" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
@@ -129,7 +129,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-dl-ASs">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-dl-ASs" customClass="RoundedButton" customModule="breakpoint" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="139" width="303" height="59.5"/>
                                                 <color key="backgroundColor" red="0.80784313725490198" green="0.32941176470588235" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
@@ -145,7 +145,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-3j-4fw">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-3j-4fw" customClass="RoundedButton" customModule="breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="20" y="288" width="303" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="iZX-ci-ofG"/>
@@ -182,12 +182,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUK-KY-V4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1610" y="0.0"/>
+            <point key="canvasLocation" x="-1610.4000000000001" y="-0.44977511244377816"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="jJM-X8-dpv">
             <objects>
-                <viewController id="Ovb-EB-Gqc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="Ovb-EB-Gqc" customClass="LoginVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slJ-cF-jkk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ho2-eE-UYr">
                                 <rect key="frame" x="62.5" y="151" width="250" height="89"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHP-DB-s3D">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHP-DB-s3D" customClass="InsetTextField" customModule="breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="rxg-S6-lAc"/>
@@ -221,7 +221,7 @@
                                             <constraint firstAttribute="height" constant="2" id="m8q-yK-DcN"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGD-To-caW">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGD-To-caW" customClass="InsetTextField" customModule="breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="p2z-I2-l1P"/>
@@ -240,7 +240,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLn-cM-tAQ" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLn-cM-tAQ" customClass="RoundedButton" customModule="breakpoint" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="290" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -257,13 +257,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eH-H8-Gm2">
-                                <rect key="frame" x="42" y="78" width="275" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eH-H8-Gm2">
+                                <rect key="frame" x="112" y="78" width="151" height="33"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ho2-eE-UYr" firstAttribute="top" secondItem="5eH-H8-Gm2" secondAttribute="bottom" constant="40" id="4Av-h8-lpY"/>
                             <constraint firstItem="RLn-cM-tAQ" firstAttribute="centerX" secondItem="slJ-cF-jkk" secondAttribute="centerX" id="Hrl-cr-1xC"/>
@@ -271,6 +272,7 @@
                             <constraint firstItem="1Lo-UK-40A" firstAttribute="leading" secondItem="IUX-jT-mV7" secondAttribute="leading" constant="8" id="bnk-t0-7RS"/>
                             <constraint firstItem="RLn-cM-tAQ" firstAttribute="top" secondItem="ho2-eE-UYr" secondAttribute="bottom" constant="50" id="jy4-95-X64"/>
                             <constraint firstItem="1Lo-UK-40A" firstAttribute="top" secondItem="IUX-jT-mV7" secondAttribute="top" constant="8" id="rAK-Tu-NSs"/>
+                            <constraint firstItem="5eH-H8-Gm2" firstAttribute="centerX" secondItem="slJ-cF-jkk" secondAttribute="centerX" id="vMK-jq-6Iu"/>
                             <constraint firstItem="ho2-eE-UYr" firstAttribute="centerX" secondItem="slJ-cF-jkk" secondAttribute="centerX" id="vwL-c3-mnM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IUX-jT-mV7"/>
