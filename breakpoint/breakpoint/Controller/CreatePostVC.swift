@@ -22,6 +22,10 @@ class CreatePostVC: UIViewController {
         textView.delegate = self
         postBtn.bindToKeyboard()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLbl.text = Auth.auth().currentUser?.email
+    }
     
     @IBAction func postBtnWasPressed(_ sender: Any) {
         if textView.text != nil && textView.text != "What's on your mind ?" {
