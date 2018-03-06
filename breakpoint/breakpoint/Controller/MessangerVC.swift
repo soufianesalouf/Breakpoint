@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupsVC: UIViewController {
+class MessangerVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
