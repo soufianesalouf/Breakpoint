@@ -13,37 +13,52 @@ class CreateNewChatVC: UIViewController {
     //Outlets
     @IBOutlet weak var titleTextField: InsetTextField!
     @IBOutlet weak var descriptionTextField: InsetTextField!
-    @IBOutlet weak var emailSearshTextField: InsetTextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var doneBtn: UIButton!
     
-    var emailArray = [String]()
+//    var emailArray = [String]()
+//    static var chosenEmailArray = [String]()
+    var chosenUserArray = [String]()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        emailSearshTextField.delegate = self
-        emailSearshTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        chosenUserArray = DataService.instance.chosenUserArray
+        tableView.reloadData()
+        super.viewDidLoad()
+//        emailSearshTextField.delegate = self
+//        emailSearshTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
     
-    @objc func textFieldDidChange(){
-        if emailSearshTextField.text == "" {
-            emailArray = []
-            tableView.reloadData()
+    override func viewWillAppear(_ animated: Bool) {
+        chosenUserArray = DataService.instance.chosenUserArray
+        if chosenUserArray.count >= 1 {
+            doneBtn.isEnabled = true
         } else {
-            DataService.instance.getEmail(forSearchQuery: emailSearshTextField.text!) { (emailArray) in
-                self.emailArray = emailArray
-                self.tableView.reloadData()
-            }
+            doneBtn.isEnabled = false
         }
+        tableView.reloadData()
+        super.viewWillAppear(animated)
     }
+    
+//    @objc func textFieldDidChange(){
+//        if emailSearshTextField.text == "" {
+//            showingEmailArray = [] + self.chosenUserArray
+//            tableView.reloadData()
+//        } else {
+//            DataService.instance.getEmail(forSearchQuery: emailSearshTextField.text!) { (emailArray) in
+//                self.showingEmailArray = emailArray
+//                self.tableView.reloadData()
+//            }
+//        }
+//    }
     
     @IBAction func doneBtnWasPressed(_ sender: Any) {
         
     }
     
     @IBAction func backBtnWasPressed(_ sender: Any) {
+        DataService.instance.setChosenUserArray(chosenUserArray: [])
         dismiss(animated: true, completion: nil)
     }
     
@@ -55,17 +70,27 @@ extension CreateNewChatVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return emailArray.count
+        return chosenUserArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "userCell") as? UserCell else { return UITableViewCell()}
         let profileImage = UIImage(named: "defaultProfileImage")
-        cell.configureCell(profileImage: profileImage!, email: emailArray[indexPath.row], isSelected: true)
+        cell.configureCell(profileImage: profileImage!, email: chosenUserArray[indexPath.row], isSelected: true)
         return cell
     }
-}
-
-extension CreateNewChatVC: UITextFieldDelegate {
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        guard let cell = tableView.cellForRow(at: indexPath) as? UserCell else { return }
+//        if !chosenUserArray.contains(cell.emailLbl.text!){
+//            chosenUserArray.append(cell.emailLbl.text!)
+//            doneBtn.isHidden = false
+//        } else {
+//            if chosenUserArray.count >= 1 {
+//                doneBtn.isHidden = false
+//            } else {
+//                doneBtn.isHidden = true
+//            }
+//        }
+//    }
 }
