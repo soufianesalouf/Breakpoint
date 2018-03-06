@@ -584,29 +584,29 @@
                                                                 <constraint firstAttribute="height" constant="44" id="TRg-eR-aTB"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="Rto-uG-fhB">
-                                                            <rect key="frame" x="313" y="6" width="20" height="48"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="Rto-uG-fhB">
+                                                            <rect key="frame" x="308" y="18" width="25" height="20"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="SKH-Xp-0by"/>
+                                                                <constraint firstAttribute="height" constant="20" id="FRw-sz-53M"/>
+                                                                <constraint firstAttribute="width" constant="25" id="SKH-Xp-0by"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="soufiane.salouf@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="dS5-ch-doW">
-                                                            <rect key="frame" x="64" y="18" width="239" height="20"/>
+                                                            <rect key="frame" x="64" y="18" width="234" height="20"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.75" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="Rto-uG-fhB" firstAttribute="top" secondItem="Oo2-WR-XwB" secondAttribute="top" constant="6" id="4jn-wU-3EZ"/>
                                                         <constraint firstItem="dS5-ch-doW" firstAttribute="leading" secondItem="ECH-TO-24c" secondAttribute="trailing" constant="10" id="BRQ-CX-kWa"/>
                                                         <constraint firstItem="ECH-TO-24c" firstAttribute="top" secondItem="Oo2-WR-XwB" secondAttribute="top" constant="6" id="HHH-Cl-yWY"/>
                                                         <constraint firstItem="Rto-uG-fhB" firstAttribute="leading" secondItem="dS5-ch-doW" secondAttribute="trailing" constant="10" id="aEO-js-V12"/>
                                                         <constraint firstAttribute="trailing" secondItem="Rto-uG-fhB" secondAttribute="trailing" constant="10" id="e6B-tJ-PBW"/>
                                                         <constraint firstItem="dS5-ch-doW" firstAttribute="centerY" secondItem="ECH-TO-24c" secondAttribute="centerY" id="l4N-2M-3Em"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Rto-uG-fhB" secondAttribute="bottom" constant="6" id="oh9-0K-nhZ"/>
                                                         <constraint firstItem="ECH-TO-24c" firstAttribute="leading" secondItem="Oo2-WR-XwB" secondAttribute="leading" constant="10" id="qib-aw-GsI"/>
+                                                        <constraint firstItem="Rto-uG-fhB" firstAttribute="centerY" secondItem="dS5-ch-doW" secondAttribute="centerY" id="xXd-Ux-gDH"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
