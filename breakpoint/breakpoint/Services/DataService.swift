@@ -18,7 +18,7 @@ class DataService {
     
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
-    private var _REF_GROUPS = DB_BASE.child("groups")
+    private var _REF_DISCUSSION = DB_BASE.child("discussion")
     private var _REF_FEED = DB_BASE.child("feed")
     
     var chosenUserArray: [String] {
@@ -33,8 +33,8 @@ class DataService {
         return _REF_USERS
     }
     
-    var REF_GROUPS: DatabaseReference {
-        return _REF_GROUPS
+    var REF_DISCUSSION: DatabaseReference {
+        return _REF_DISCUSSION
     }
     
     var REF_FEED: DatabaseReference {
@@ -97,6 +97,25 @@ class DataService {
             }
             handler(emailArray)
         }
+    }
+    
+    func getIds(forUserNames userNames: [String], handler: @escaping(_ uidArray: [String]) -> () ){
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            var idArray = [String]()
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if userNames.contains(email) {
+                    idArray.append(user.key)
+                }
+            }
+            handler(idArray)
+        }
+    }
+    
+    func createDiscussion(withTitle title: String, andDescription description: String, forUserIds ids: [String],handler: @escaping (_ discussionCreated: Bool) -> () ){
+        REF_DISCUSSION.childByAutoId().updateChildValues(["title": title, "description": description, "members": ids])
+        handler(true)
     }
     
 }

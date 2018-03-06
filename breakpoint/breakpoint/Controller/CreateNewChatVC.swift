@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateNewChatVC: UIViewController {
     
@@ -54,7 +55,22 @@ class CreateNewChatVC: UIViewController {
 //    }
     
     @IBAction func doneBtnWasPressed(_ sender: Any) {
-        
+        if chosenUserArray.count > 0 {
+            if titleTextField.text != "" && descriptionTextField.text != "" {
+                DataService.instance.getIds(forUserNames: chosenUserArray) { (idsArray) in
+                    var userIds = idsArray
+                    userIds.append((Auth.auth().currentUser?.uid)!)
+                    
+                    DataService.instance.createDiscussion(withTitle: self.titleTextField.text!, andDescription: self.descriptionTextField.text!, forUserIds: userIds, handler: { (discussionCreated) in
+                        if discussionCreated {
+                            self.dismiss(animated: true, completion: nil)
+                        } else {
+                            print("Discussion could not be created. Please try again.")
+                        }
+                    })
+                }
+            }
+        }
     }
     
     @IBAction func backBtnWasPressed(_ sender: Any) {

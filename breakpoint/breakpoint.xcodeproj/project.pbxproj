@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		902D7D2A204E59C500412AD5 /* CreateNewChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902D7D29204E59C500412AD5 /* CreateNewChatVC.swift */; };
+		906F2AFA204F592000028213 /* DiscussionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F2AF9204F592000028213 /* DiscussionCell.swift */; };
 		90885701204D846D00B1373F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885700204D846D00B1373F /* AppDelegate.swift */; };
 		90885703204D846D00B1373F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885702204D846D00B1373F /* FeedVC.swift */; };
 		90885705204D846D00B1373F /* MessangerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885704204D846D00B1373F /* MessangerVC.swift */; };
@@ -38,6 +39,7 @@
 		1AE84E0792A40D311BD1BAF9 /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		73AE1EBB46088A97FC41F322 /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902D7D29204E59C500412AD5 /* CreateNewChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChatVC.swift; sourceTree = "<group>"; };
+		906F2AF9204F592000028213 /* DiscussionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionCell.swift; sourceTree = "<group>"; };
 		908856FD204D846D00B1373F /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90885700204D846D00B1373F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90885702204D846D00B1373F /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				908B776A204DD27800937FB0 /* RoundedButton.swift */,
 				908B7774204E1EA900937FB0 /* FeedCell.swift */,
 				909BFD5D204EEC9100E64616 /* UserCell.swift */,
+				906F2AF9204F592000028213 /* DiscussionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				90885703204D846D00B1373F /* FeedVC.swift in Sources */,
 				90885729204DC20000B1373F /* Constant.swift in Sources */,
 				9088571C204D930600B1373F /* DataService.swift in Sources */,
+				906F2AFA204F592000028213 /* DiscussionCell.swift in Sources */,
 				908B7773204E16A300937FB0 /* UIViewExt.swift in Sources */,
 				908B7775204E1EA900937FB0 /* FeedCell.swift in Sources */,
 				902D7D2A204E59C500412AD5 /* CreateNewChatVC.swift in Sources */,
