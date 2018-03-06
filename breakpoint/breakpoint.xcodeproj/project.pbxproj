@@ -26,6 +26,7 @@
 		908B776F204E06EE00937FB0 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B776E204E06EE00937FB0 /* ProfilVC.swift */; };
 		908B7771204E109A00937FB0 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B7770204E109A00937FB0 /* CreatePostVC.swift */; };
 		908B7773204E16A300937FB0 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B7772204E16A200937FB0 /* UIViewExt.swift */; };
+		908B7775204E1EA900937FB0 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908B7774204E1EA900937FB0 /* FeedCell.swift */; };
 		AE01A27B3B2EBFC0346D37BD /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AE1EBB46088A97FC41F322 /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		908B776E204E06EE00937FB0 /* ProfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
 		908B7770204E109A00937FB0 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		908B7772204E16A200937FB0 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		908B7774204E1EA900937FB0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		E295022F1C88C5A0FEAD4A00 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				9088571F204DB45A00B1373F /* RoundedShadowView.swift */,
 				90885725204DBD2500B1373F /* InsetTextField.swift */,
 				908B776A204DD27800937FB0 /* RoundedButton.swift */,
+				908B7774204E1EA900937FB0 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				90885729204DC20000B1373F /* Constant.swift in Sources */,
 				9088571C204D930600B1373F /* DataService.swift in Sources */,
 				908B7773204E16A300937FB0 /* UIViewExt.swift in Sources */,
+				908B7775204E1EA900937FB0 /* FeedCell.swift in Sources */,
 				90885726204DBD2500B1373F /* InsetTextField.swift in Sources */,
 				908B776F204E06EE00937FB0 /* ProfilVC.swift in Sources */,
 			);
