@@ -42,10 +42,17 @@ extension MessangerVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return discussionArray.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = discussionTableView.dequeueReusableCell(withIdentifier: "discussionCell", for: indexPath) as? DiscussionCell else { return UITableViewCell() }
         let discussion = discussionArray[indexPath.row]
         cell.configureCell(title: discussion.discussionTitle , description: discussion.discussionDesc, memberCount: discussion.memberCount)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let discussionFeedVC = storyboard?.instantiateViewController(withIdentifier: "DiscussionFeedVC") as? DiscussionFeedVC else { return }
+        discussionFeedVC.initData(forDiscussion: discussionArray[indexPath.row])
+        present(discussionFeedVC, animated:  true , completion: nil)
     }
 }
