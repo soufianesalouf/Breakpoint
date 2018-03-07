@@ -53,6 +53,6 @@ extension MessangerVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let discussionFeedVC = storyboard?.instantiateViewController(withIdentifier: "DiscussionFeedVC") as? DiscussionFeedVC else { return }
         discussionFeedVC.initData(forDiscussion: discussionArray[indexPath.row])
-        present(discussionFeedVC, animated:  true , completion: nil)
+        presentDetail(discussionFeedVC)
     }
 }
