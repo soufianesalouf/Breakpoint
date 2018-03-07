@@ -118,4 +118,21 @@ class DataService {
         handler(true)
     }
     
+    func getAllDiscussion(handler: @escaping (_ discussionArray: [Discussion]) -> ()){
+        var discussionArray = [Discussion]()
+        REF_DISCUSSION.observeSingleEvent(of: .value) { (discussionSnapshot) in
+            guard let discussionSnapshot = discussionSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for discussion in discussionSnapshot {
+                let memberArray = discussion.childSnapshot(forPath: "members").value as! [String]
+                if memberArray.contains((Auth.auth().currentUser?.uid)!){
+                    let title = discussion.childSnapshot(forPath: "title").value as! String
+                    let description = discussion.childSnapshot(forPath: "description").value as! String
+                    let discussion = Discussion(title: title, description: description, key: discussion.key, members: memberArray, memberCount: memberArray.count)
+                    discussionArray.append(discussion)
+                }
+            }
+            handler(discussionArray)
+        }
+    }
+    
 }
