@@ -10,6 +10,8 @@
 		902D7D2A204E59C500412AD5 /* CreateNewChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902D7D29204E59C500412AD5 /* CreateNewChatVC.swift */; };
 		906F2AFA204F592000028213 /* DiscussionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F2AF9204F592000028213 /* DiscussionCell.swift */; };
 		906F2AFC204F5F8700028213 /* Discussion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F2AFB204F5F8700028213 /* Discussion.swift */; };
+		906F2B00204F6AAD00028213 /* DiscussionFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F2AFF204F6AAD00028213 /* DiscussionFeedCell.swift */; };
+		906F2B04204F6C2600028213 /* DiscussionFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906F2B03204F6C2600028213 /* DiscussionFeedVC.swift */; };
 		90885701204D846D00B1373F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885700204D846D00B1373F /* AppDelegate.swift */; };
 		90885703204D846D00B1373F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885702204D846D00B1373F /* FeedVC.swift */; };
 		90885705204D846D00B1373F /* MessangerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90885704204D846D00B1373F /* MessangerVC.swift */; };
@@ -42,6 +44,8 @@
 		902D7D29204E59C500412AD5 /* CreateNewChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewChatVC.swift; sourceTree = "<group>"; };
 		906F2AF9204F592000028213 /* DiscussionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionCell.swift; sourceTree = "<group>"; };
 		906F2AFB204F5F8700028213 /* Discussion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discussion.swift; sourceTree = "<group>"; };
+		906F2AFF204F6AAD00028213 /* DiscussionFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionFeedCell.swift; sourceTree = "<group>"; };
+		906F2B03204F6C2600028213 /* DiscussionFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionFeedVC.swift; sourceTree = "<group>"; };
 		908856FD204D846D00B1373F /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90885700204D846D00B1373F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90885702204D846D00B1373F /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				908B7770204E109A00937FB0 /* CreatePostVC.swift */,
 				902D7D29204E59C500412AD5 /* CreateNewChatVC.swift */,
 				909BFD5F204F17E600E64616 /* AddMemberVC.swift */,
+				906F2B03204F6C2600028213 /* DiscussionFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				908B7774204E1EA900937FB0 /* FeedCell.swift */,
 				909BFD5D204EEC9100E64616 /* UserCell.swift */,
 				906F2AF9204F592000028213 /* DiscussionCell.swift */,
+				906F2AFF204F6AAD00028213 /* DiscussionFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,10 +345,12 @@
 				90885724204DBC7B00B1373F /* LoginVC.swift in Sources */,
 				908B7777204E22EF00937FB0 /* Message.swift in Sources */,
 				908B776D204DDD4400937FB0 /* AuthService.swift in Sources */,
+				906F2B00204F6AAD00028213 /* DiscussionFeedCell.swift in Sources */,
 				90885720204DB45A00B1373F /* RoundedShadowView.swift in Sources */,
 				9088571E204DA20400B1373F /* GradientView.swift in Sources */,
 				909BFD5E204EEC9100E64616 /* UserCell.swift in Sources */,
 				90885722204DBC1800B1373F /* AuthVC.swift in Sources */,
+				906F2B04204F6C2600028213 /* DiscussionFeedVC.swift in Sources */,
 				908B776B204DD27800937FB0 /* RoundedButton.swift in Sources */,
 				909BFD60204F17E600E64616 /* AddMemberVC.swift in Sources */,
 				908B7771204E109A00937FB0 /* CreatePostVC.swift in Sources */,
