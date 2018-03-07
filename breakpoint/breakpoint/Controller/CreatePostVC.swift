@@ -30,7 +30,7 @@ class CreatePostVC: UIViewController {
     @IBAction func postBtnWasPressed(_ sender: Any) {
         if textView.text != nil && textView.text != "What's on your mind ?" {
             postBtn.isEnabled = false
-            DataService.instance.uploadPost(withMessage: textView.text, forUID: (Auth.auth().currentUser?.uid)!, withGoupKey: nil) { (success) in
+            DataService.instance.uploadPost(withMessage: textView.text, forUID: (Auth.auth().currentUser?.uid)!, withDiscussionKey: nil) { (success) in
                 if success {
                     self.postBtn.isEnabled = true
                     self.dismiss(animated: true, completion: nil)

@@ -60,9 +60,10 @@ class DataService {
         }
     }
     
-    func uploadPost(withMessage message: String, forUID uid: String , withGoupKey groupKey: String?, sendCompletion: @escaping (_ status: Bool) -> () ){
-        if groupKey != nil {
-            
+    func uploadPost(withMessage message: String, forUID uid: String , withDiscussionKey discussionKey: String?, sendCompletion: @escaping (_ status: Bool) -> () ){
+        if discussionKey != nil {
+            REF_DISCUSSION.child(discussionKey!).child("messages").childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            sendCompletion(true)
         } else {
             REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
             sendCompletion(true)
@@ -75,6 +76,22 @@ class DataService {
             guard let feedMessagesSnapshot = feedMessagesSnapshot.children.allObjects as? [DataSnapshot] else { return }
             
             for message in feedMessagesSnapshot {
+                let content = message.childSnapshot(forPath: "content").value as! String
+                let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                
+                let message = Message(content: content, senderId: senderId)
+                messagesArray.append(message)
+            }
+            handler(messagesArray)
+        }
+    }
+    
+    func getAllMessagesFor(desiredDiscussion: Discussion ,handler: @escaping (_ messages: ([Message])) -> ()){
+        var messagesArray = [Message]()
+        REF_DISCUSSION.child(desiredDiscussion.Key).child("messages").observeSingleEvent(of: .value) { (DiscussionMessagesSnapshot) in
+            guard let discussionMessagesSnapshot = DiscussionMessagesSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            for message in discussionMessagesSnapshot {
                 let content = message.childSnapshot(forPath: "content").value as! String
                 let senderId = message.childSnapshot(forPath: "senderId").value as! String
                 

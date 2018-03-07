@@ -525,7 +525,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cap-AS-2Z0">
-                                <rect key="frame" x="0.0" y="106" width="375" height="561"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="501"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="discussionFeedCell" id="f9k-c6-Yjw" customClass="DiscussionFeedCell" customModule="breakpoint" customModuleProvider="target">
@@ -639,7 +639,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1M1-ns-oIn" firstAttribute="bottom" secondItem="cap-AS-2Z0" secondAttribute="bottom" id="23o-YR-A7s"/>
                             <constraint firstItem="7GI-mQ-yr4" firstAttribute="leading" secondItem="1M1-ns-oIn" secondAttribute="leading" constant="20" id="25R-SK-vWo"/>
                             <constraint firstItem="cap-AS-2Z0" firstAttribute="trailing" secondItem="1M1-ns-oIn" secondAttribute="trailing" id="8U9-bc-64m"/>
                             <constraint firstItem="B6c-wO-rfT" firstAttribute="trailing" secondItem="1M1-ns-oIn" secondAttribute="trailing" id="I23-Eh-8Ne"/>
@@ -649,6 +648,7 @@
                             <constraint firstItem="cap-AS-2Z0" firstAttribute="top" secondItem="7GI-mQ-yr4" secondAttribute="bottom" constant="8" id="Wdn-rq-jHL"/>
                             <constraint firstItem="1ky-fF-XOM" firstAttribute="leading" secondItem="1M1-ns-oIn" secondAttribute="leading" id="Zc7-Yo-EFo"/>
                             <constraint firstItem="1ky-fF-XOM" firstAttribute="trailing" secondItem="1M1-ns-oIn" secondAttribute="trailing" id="jpX-1l-NQY"/>
+                            <constraint firstItem="1ky-fF-XOM" firstAttribute="top" secondItem="cap-AS-2Z0" secondAttribute="bottom" id="nlT-nJ-NAc"/>
                             <constraint firstItem="B6c-wO-rfT" firstAttribute="top" secondItem="UbK-ZM-P4A" secondAttribute="top" id="oZv-BP-QGT"/>
                             <constraint firstItem="7GI-mQ-yr4" firstAttribute="top" secondItem="B6c-wO-rfT" secondAttribute="bottom" constant="8" id="rHa-TI-ahu"/>
                             <constraint firstItem="cap-AS-2Z0" firstAttribute="leading" secondItem="1M1-ns-oIn" secondAttribute="leading" id="x0V-1k-BRT"/>
@@ -666,7 +666,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NUH-1i-hEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1071"/>
+            <point key="canvasLocation" x="749.60000000000002" y="1070.9145427286358"/>
         </scene>
         <!--Create New ChatVC-->
         <scene sceneID="AHA-AH-JEc">
