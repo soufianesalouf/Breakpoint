@@ -12,11 +12,14 @@ class MessangerVC: UIViewController {
     
     //Outlets
     @IBOutlet weak var discussionTableView: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var discussionArray = [Discussion]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.startAnimating()
+        spinner.isHidden = false
         discussionTableView.delegate = self
         discussionTableView.dataSource = self
     }
@@ -27,8 +30,14 @@ class MessangerVC: UIViewController {
             DataService.instance.getAllDiscussion { (returnedDiscussionsArray) in
                 self.discussionArray = returnedDiscussionsArray
                 self.discussionTableView.reloadData()
+                self.spinner.stopAnimating()
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        spinner.startAnimating()
     }
 
 
